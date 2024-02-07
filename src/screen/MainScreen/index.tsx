@@ -3,12 +3,14 @@ import { View } from "react-native";
 
 import { StatusBar } from "expo-status-bar";
 
+import { styles } from "./styles";
+
 import ProfilePicture from "../../components/ProfilePicture";
 import { LinkButton } from "../../components/LinkButton";
 
 const MainScreen = () => {
   return (
-    <>
+    <View style={styles.container}>
       <StatusBar style="light" />
       <View>
         <ProfilePicture text="Luiz Felipe Thomaz Preto" />
@@ -33,7 +35,7 @@ const MainScreen = () => {
           url="mailto:luizftp25@gmail.com"
         />
       </View>
-    </>
+    </View>
   );
 };
 
