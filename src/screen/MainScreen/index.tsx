@@ -6,11 +6,9 @@ import { StatusBar } from "expo-status-bar";
 import ProfilePicture from "../../components/ProfilePicture";
 import { LinkButton } from "../../components/LinkButton";
 
-import { styles } from "./styles";
-
 const MainScreen = () => {
   return (
-    <View style={styles.container}>
+    <>
       <StatusBar style="light" />
       <View>
         <ProfilePicture text="Luiz Felipe Thomaz Preto" />
@@ -35,7 +33,7 @@ const MainScreen = () => {
           url="mailto:luizftp25@gmail.com"
         />
       </View>
-    </View>
+    </>
   );
 };
 
