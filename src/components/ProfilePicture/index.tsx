@@ -5,13 +5,10 @@ import picture from "../../../assets/profile.jpeg";
 
 import { styles } from "./styles";
 
-const ProfilePicture = ({ text }: { text: string }) => {
-  return (
-    <View style={styles.container}>
-      <Image style={styles.image} source={picture} />
-      <Text style={styles.text}>{text}</Text>
-    </View>
-  );
-};
-
+const ProfilePicture = ({ text }: { text: string }) => (
+  <View style={styles.container}>
+    <Image style={styles.image} source={picture} />
+    <Text style={styles.text}>{text}</Text>
+  </View>
+);
 export default ProfilePicture;

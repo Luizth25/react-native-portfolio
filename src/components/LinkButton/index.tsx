@@ -6,16 +6,16 @@ import { MaterialCommunityIcons } from "@expo/vector-icons";
 import { styles } from "./styles";
 import { TLinkButtonProps } from "./types";
 
-export function LinkButton({
+const LinkButton = ({
   url,
   linkName,
   iconName,
   iconColor,
-}: TLinkButtonProps) {
+}: TLinkButtonProps) => {
   const handlePress = useCallback(async () => {
-    const supported = await Linking.canOpenURL(url);
+    const supportedLink = await Linking.canOpenURL(url);
 
-    if (supported) {
+    if (supportedLink) {
       await Linking.openURL(url);
     }
   }, [url]);
@@ -30,4 +30,6 @@ export function LinkButton({
       </View>
     </Pressable>
   );
-}
+};
+
+export default LinkButton;

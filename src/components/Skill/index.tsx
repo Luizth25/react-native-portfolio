@@ -6,7 +6,7 @@ import StarRating from "./StarRating";
 import { styles } from "./styles";
 import { TSkillProps } from "./types";
 
-export function Skill({ rating, skillName }: TSkillProps) {
+const Skill = ({ rating, skillName }: TSkillProps) => {
   return (
     <View style={styles.container}>
       <View>
@@ -17,4 +17,6 @@ export function Skill({ rating, skillName }: TSkillProps) {
       </View>
     </View>
   );
-}
+};
+
+export default Skill;
