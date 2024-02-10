@@ -1,5 +1,5 @@
 import React from "react";
-import { View } from "react-native";
+import { ScrollView, View } from "react-native";
 
 import { StatusBar } from "expo-status-bar";
 
@@ -14,7 +14,7 @@ const SkillScreen = () => (
     <View>
       <ProfilePicture text="Minhas Habilidades" />
     </View>
-    <View style={{ display: "flex", gap: 24 }}>
+    <View style={{ display: "flex", gap: 4 }}>
       <Skill skillName="HTML" rating={70} />
       <Skill skillName="CSS" rating={70} />
       <Skill skillName="Typescript" rating={70} />
